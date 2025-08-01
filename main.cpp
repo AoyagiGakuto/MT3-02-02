@@ -6,7 +6,6 @@
 
 const char kWindowTitle[] = "LE2D_02_アオヤギ_ガクト_確認課題";
 
-
 #ifndef M_PI
 #define M_PI 3.14159265358979323846f
 #endif
@@ -267,10 +266,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     char keys[256] = { 0 };
     char preKeys[256] = { 0 };
 
-    Vector3 cameraTranslate { 0.0f, -4.0f, -10.0f };
+    // カメラ（少し上から見下ろす）
+    Vector3 cameraTranslate { 0.0f, -4.0f, -20.0f };
     Vector3 cameraRotate { -0.2f, 0.0f, 0.0f };
 
-    Sphere sphere = { { 0.0f, 1.0f, 0.0f }, 1.0f };
+    Sphere sphere = { { 0.0f, 1.0f, 0.0f }, 0.4f };
 
     Plane plane;
     plane.point = { 0.0f, 0.0f, 0.0f }; // 原点に平面

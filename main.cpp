@@ -270,10 +270,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     Vector3 cameraTranslate { 0.0f, -4.0f, -20.0f };
     Vector3 cameraRotate { -0.2f, 0.0f, 0.0f };
 
-    Sphere sphere = { { 0.0f, 1.0f, 0.0f }, 0.4f };
+    Sphere sphere = { { 0.0f, 0.1f, 0.0f }, 0.4f };
 
     Plane plane;
-    plane.point = { 0.0f, 0.0f, 0.0f }; // 原点に平面
+    plane.point = { 0.0f, -0.5f, 0.0f }; // 原点に平面
     plane.normal = { 0.0f, 1.0f, 0.0f }; // 上向きの法線
 
     Matrix4x4 viewportMatrix = MakeViewportForMatrix(
